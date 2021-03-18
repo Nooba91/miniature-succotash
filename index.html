@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdChat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="AdChat.css">
+    <script>
+        //Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyA3PGq3hpKWAs5JbC5ONJ_emrnnQ6vnE40",
+          authDomain: "doodoo-a2626.firebaseapp.com",
+          databaseURL: "https://doodoo-a2626-default-rtdb.firebaseio.com",
+          projectId: "doodoo-a2626",
+          storageBucket: "doodoo-a2626.appspot.com",
+          messagingSenderId: "910412742943",
+          appId: "1:910412742943:web:ee44654fb63c71f25eb02a",
+          measurementId: "G-LESL7KZHYJ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+</head>
+<body>
+    <button class="btn btn-danger" style="float:right;"><span class="glyphicon glyphicon-log-out"></span>Logout</button>
+    <center>
+      <h2 style="color:rgb(0, 255, 255);">Welcome,<mark id="user_name" class="text-capitalize">noobpie</mark>!</h2>
+      <br>
+      <br>
+      <br>
+      <h4 style="text-shadow:0 0 5px rgb(0, 255, 0);">Create a room</h4>
+      <br>
+      <br>
+      <input id="new_room_name" class="form-control" placeholder="Room name...">
+      <button onclick="addRoom()" class="btn btn-success">Add Room</button>
+      <br>
+      <br>
+      <ul id="myUL">
+        <li>Hejjo</li>
+      </ul>
+    </center>
+</body>
+</html>
